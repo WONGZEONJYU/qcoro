@@ -357,6 +357,7 @@ public:
         return iterator{nullptr};
     }
 
+    /// Swaps this AsyncGenerator with another one.
     void swap(AsyncGenerator &other) noexcept {
         using std::swap;
         swap(m_coroutine, other.m_coroutine);
